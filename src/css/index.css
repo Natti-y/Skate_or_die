@@ -28,6 +28,58 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
+/* NAVBAR */
+.navbar { 
+  padding: 0.5rem 2rem; 
+}
+
+.navbar .navbar-brand {
+  color: var(--title-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  color: var(--title-color);
+  font-size: 1.5rem; 
+  margin-left: 2rem; 
+  margin-right: 2rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #ffffff !important; 
+}
+
+.navbar .dropdown-menu {
+  background-color: #000;
+}
+
+.navbar .dropdown-item {
+  color: var(--title-color);
+  font-size: 1.2rem;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #222;
+  color: #ffffff;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 8%;
+}
+
+.navbar-collapse {
+  justify-content: flex-start; 
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
 
 /* LANDING PAGE*/
 .landing {

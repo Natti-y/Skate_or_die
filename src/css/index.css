@@ -1,0 +1,60 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --title-color: #E3D6B6;
+  background-color: #242424;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: block;
+  /* Bakgrundsbild */
+  background-image: url('/src/assets/background.png'); 
+  background-size: cover;      
+  background-position: center bottom;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+}
+
+
+/* LANDING PAGE*/
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  padding-left: 8%;
+  padding-top: 5vh;  
+}
+
+.landing-h1 {
+  font-size: 17rem;
+  color: var(--title-color);
+  margin-bottom: 0rem;
+}
+
+.landing-h1 .h1-line1,
+.landing-h1 .h1-line2 {
+  line-height: 0.9;
+  display: block; 
+}
+
+.landing-h2 {
+  margin-top: 1rem;
+  font-size: 5.5rem;
+  color: var(--title-color);
+  white-space: nowrap;
+}
+

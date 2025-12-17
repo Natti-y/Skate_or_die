@@ -22,52 +22,49 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="#">Home</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">New</a>
-            </li>
 
-            {/* Dropdown: Clothes */}
+            {/* Dropdown: Products */}
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
-                id="clothesDropdown"
+                id="productsDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Clothes
+                Products
               </a>
-              <ul className="dropdown-menu" aria-labelledby="clothesDropdown">
+              <ul className="dropdown-menu" aria-labelledby="productsDropdown">
                 <li><a className="dropdown-item" href="#">T-Shirt</a></li>
                 <li><a className="dropdown-item" href="#">Hoodie</a></li>
                 <li><a className="dropdown-item" href="#">Jacket</a></li>
+                <li><a className="dropdown-item" href="#">Shoes</a></li>
               </ul>
             </li>
+            
+            <li className="nav-item">
+              <a className="nav-link" href="#">Create New Category</a>
+            </li>
 
-            {/* Dropdown: Shoes */}
+            {/* Dropdown: New Category */}
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
-                id="shoesDropdown"
+                id="newCategoryDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Shoes
+                New Categories
               </a>
-              <ul className="dropdown-menu" aria-labelledby="shoesDropdown">
-                <li><a className="dropdown-item" href="#">Skate Shoes</a></li>
-                <li><a className="dropdown-item" href="#">Sneakers</a></li>
-                <li><a className="dropdown-item" href="#">Boots</a></li>
+              <ul className="dropdown-menu" aria-labelledby="newCategoriesDropdown">
               </ul>
+            </li>
+            
+            <li className="nav-item">
+              <a className="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>

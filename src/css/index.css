@@ -159,3 +159,46 @@ h1, h2, h3 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+/* NEW PRODUCTS*/
+.new-products {
+  max-width: 2000px;
+  height: 550px;
+  margin: 110px auto;
+  text-align: center;
+  color: #fff;
+  padding: 60px 20px;
+  background-color: #111;
+  border-radius: 20px;
+}
+
+.new.products-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.products-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 300px;
+  height: 400px;
+  background-color: #222;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+.product-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+

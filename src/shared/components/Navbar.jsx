@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-const Navbar = () => {
+const Navbar = ({ onNavigate }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black">
       <div className="container-fluid">
@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">Home</a>
+              <a className="nav-link" href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>Home</a>
             </li>
 
             {/* Dropdown: Products */}
@@ -36,10 +36,10 @@ const Navbar = () => {
                 Products
               </a>
               <ul className="dropdown-menu" aria-labelledby="productsDropdown">
-                <li><a className="dropdown-item" href="#">T-Shirt</a></li>
-                <li><a className="dropdown-item" href="#">Hoodie</a></li>
-                <li><a className="dropdown-item" href="#">Jacket</a></li>
-                <li><a className="dropdown-item" href="#">Shoes</a></li>
+                <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'tshirt'); }}>T-Shirt</a></li>
+                <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'hoodie'); }}>Hoodie</a></li>
+                <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'jacket'); }}>Jacket</a></li>
+                <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'shoes'); }}>Shoes</a></li>
               </ul>
             </li>
             

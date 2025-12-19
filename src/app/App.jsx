@@ -3,12 +3,14 @@ import Navbar from '../shared/components/Navbar';
 import Landing from '../pages/landing/Landing';
 import Products from '../pages/products/Products';
 import CreateNewCategories from '../pages/createNewCategories/CreateNewCategories';
+import CreateProduct from '../pages/createProduct/CreateProduct';
 
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [newCategories, setNewCategories] = useState([]); // Detta är lista för new categories
+  const [products, setProducts] = useState([]); // För att lagra skapade produkter
 
 
   const handleNavigate = (page, category = '') => {
@@ -25,6 +27,13 @@ function App() {
         <CreateNewCategories
           newCategories={newCategories}      
           setNewCategories={setNewCategories} 
+        />
+      )}
+      {currentPage === 'create-product' && (
+        <CreateProduct
+          category={selectedCategory}
+          products={products}
+          setProducts={setProducts}
         />
       )}
 

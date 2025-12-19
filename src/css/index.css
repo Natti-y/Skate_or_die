@@ -234,4 +234,18 @@ h1, h2, h3 {
   border: 1px solid var(--title-color);
 }
 
+/* CREATE PRODUCT PAGE */
+.create-product-card-img {
+  height: 450px;
+  object-fit: cover;
+}
 
+.create-product-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.create-product-preview {
+  max-width: 200px;
+  max-height: 200px;
+}

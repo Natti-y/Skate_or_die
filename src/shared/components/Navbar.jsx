@@ -69,7 +69,16 @@ const Navbar = ({ onNavigate, newCategories })  => {
                 {newCategories.length === 0 && <li><span className="dropdown-item">Inga kategorier</span></li>}
                 {newCategories.map((cat, index) => (
                   <li key={index}>
-                    <span className="dropdown-item">{cat}</span> {/* endast visning, ingen navigation */}
+                    <a 
+                      className="dropdown-item" 
+                      href="#"
+                      onClick={(e) => { 
+                        e.preventDefault(); 
+                        onNavigate('create-product', cat); 
+                      }}
+                    >
+                      {cat}
+                    </a>
                   </li>
                 ))}  
               </ul>

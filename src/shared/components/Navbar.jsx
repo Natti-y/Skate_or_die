@@ -85,7 +85,16 @@ const Navbar = ({ onNavigate, newCategories })  => {
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <a
+                className="nav-link"
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('contact');
+                }}
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>

@@ -1,5 +1,9 @@
 import '../../css/index.css';
 import VideoPlayer from '../../shared/components/VideoPlayer';
+import tshirtImg from '../../assets/newDrops/skateordie-tshirt.jpg';
+import hoodieImg from '../../assets/newDrops/skateordiehoodie.webp';
+import shoesImg from '../../assets/newDrops/skateordieshoes.jpg';
+
 
 const Landing = () => {
   return (
@@ -28,18 +32,30 @@ const Landing = () => {
       <div className="products-grid">
         <div className="product-card">
           <h3>T-shirt</h3>
-          <img src="src/assets/newDrops/skateordie-tshirt.jpg" alt="T-shirt" />
-        </div>
+            <img src="/gifs/flames-transparent.gif"
+            alt="Flames"
+            className="flames-gif" />
+            <img src={tshirtImg} alt="T-shirt" 
+            className="product-img" />
+          </div>
 
         <div className="product-card">
           <h3>Hoodie</h3>
-          <img src="src/assets/newDrops/skateordiehoodie.webp" alt="Hoodie" />
-        </div>
+            <img src="/gifs/flames-transparent.gif"
+            alt="Flames"
+            className="flames-gif" />
+            <img src={hoodieImg} alt="Hoodie" 
+            className="product-img"/>
+          </div>
 
         <div className="product-card">
           <h3>Shoes</h3>
-          <img src="src/assets/newDrops/skateordieshoes.jpg" alt="Shoes" />
-        </div>
+            <img src="gifs/flames-transparent.gif"
+            alt="Flames"
+            className="flames-gif" />
+            <img src={shoesImg} alt="Shoes"
+            className="product-img" />
+          </div>
       </div>
     </section>
     </>

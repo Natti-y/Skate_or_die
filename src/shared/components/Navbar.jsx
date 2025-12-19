@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-const Navbar = ({ onNavigate }) => {
+const Navbar = ({ onNavigate, newCategories })  => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black">
       <div className="container-fluid">
@@ -44,7 +44,13 @@ const Navbar = ({ onNavigate }) => {
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#">Create New Category</a>
+              <a 
+                className="nav-link" 
+                href="#"
+                onClick={(e) => { e.preventDefault(); onNavigate('create-category'); }}
+              >
+                Create New Category
+                </a>
             </li>
 
             {/* Dropdown: New Category */}
@@ -60,6 +66,12 @@ const Navbar = ({ onNavigate }) => {
                 New Categories
               </a>
               <ul className="dropdown-menu" aria-labelledby="newCategoriesDropdown">
+                {newCategories.length === 0 && <li><span className="dropdown-item">Inga kategorier</span></li>}
+                {newCategories.map((cat, index) => (
+                  <li key={index}>
+                    <span className="dropdown-item">{cat}</span> {/* endast visning, ingen navigation */}
+                  </li>
+                ))}  
               </ul>
             </li>
             

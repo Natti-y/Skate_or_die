@@ -3,6 +3,7 @@ import Navbar from '../shared/components/Navbar';
 import Landing from '../pages/landing/Landing';
 import Products from '../pages/products/Products';
 import CreateNewCategories from '../pages/createNewCategories/CreateNewCategories';
+import Contact from '../pages/contact/Contact';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
           setNewCategories={setNewCategories} 
         />
       )}
-
+      {currentPage === 'contact' && <Contact />}
     </>
   );
 }

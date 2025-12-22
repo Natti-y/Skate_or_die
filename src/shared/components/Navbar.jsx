@@ -36,7 +36,7 @@ const Navbar = ({ onNavigate, newCategories })  => {
                 Products
               </a>
               <ul className="dropdown-menu" aria-labelledby="productsDropdown">
-                <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'tshirt'); }}>T-Shirt</a></li>
+                <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'tshirt'); }}>T-shirt</a></li>
                 <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'hoodie'); }}>Hoodie</a></li>
                 <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'jacket'); }}>Jacket</a></li>
                 <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); onNavigate('products', 'shoes'); }}>Shoes</a></li>

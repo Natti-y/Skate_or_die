@@ -29,6 +29,10 @@ const Contact = () => {
 
   return (
     <div className="contact-page-wrapper">
+      <div className="contact-page-inner">
+      <div className="contact-image">
+        <img src="src/assets/varial-kickflip-skate.gif" alt="Skater" />
+      </div>
       <div className="container mt-5 contact-page">
         <h1>Contact</h1>
         <p><i>If you have any questions, feel free to reach out!</i></p>
@@ -78,10 +82,11 @@ const Contact = () => {
             />
           </div>
 
-          <button type="submit" className="contact-btn">Send</button>
+          <button type="submit" className="btn-style">Send</button>
         </form>
 
         {status && <p className="mt-3">{status}</p>}
+      </div>
       </div>
     </div>
   );

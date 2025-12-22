@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../shared/components/Navbar';
+import PromoBanner from '../shared/components/PromoBanner';
 import Landing from '../pages/landing/Landing';
 import Products from '../pages/products/Products';
 import CreateNewCategories from '../pages/createNewCategories/CreateNewCategories';
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <Navbar onNavigate={handleNavigate} newCategories={newCategories} /> 
+      <PromoBanner /> 
       {currentPage === 'home' && <Landing />}
       {currentPage === 'products' && <Products category={selectedCategory} />}
       {currentPage === 'create-category' && (

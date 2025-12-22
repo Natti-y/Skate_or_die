@@ -41,7 +41,7 @@ const Products = ({ category }) => {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-capitalize mb-4 text-white">{category}</h1>
+      <h1 className="text-capitalize mb-4 product-title">{category}</h1>
       <div className="row">
         {products.map(product => (
           <div key={product.id} className="col-md-4 mb-4">
@@ -57,7 +57,7 @@ const Products = ({ category }) => {
               <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text">{product.price} kr</p>
-                <button className="btn btn-primary">Köp</button>
+                <button className="btn-style">Buy</button>
               </div>
             </div>
           </div>

@@ -11,21 +11,26 @@ const [newCategoryName, setNewCategoryName] = useState('');
   };
 
   return (
-    <div className="bg-dark p-4 rounded shadow" style={{ maxWidth: '500px', margin: '0 auto' }}>
-      {/* Bakgrund runt hela sektionen */}
-      <h2 className="text-warning mb-3">Create a new category</h2> {/* Gul text för den poppar mer */}
-      <div className="mb-3">
-        <input
-          type="text"
-          className="form-control bg-black text-warning border-warning" // Gul text svart bakgrund och gul kant
-          placeholder="Category name"
-          value={newCategoryName}
-          onChange={(e) => setNewCategoryName(e.target.value)}
-        />
+    <div className="newcategory-wrapper">
+      <div className="newcategory-page">
+        <h2 className="newcategory-title mb-3">Create a new category</h2>
+        <div className="mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Category name"
+            value={newCategoryName}
+            onChange={(e) => setNewCategoryName(e.target.value)}
+          />
+        </div>
+        <button className="btn-style" onClick={handleCreateCategory}>
+          Create
+        </button>
       </div>
-      <button className="btn btn-warning w-100" onClick={handleCreateCategory}>
-        Create
-      </button>
+
+        <div className="newcategory-images mt-4">
+          <img src="src/assets/skaters_town.gif" alt="Skaters" />
+        </div>
     </div>
   );
 };
